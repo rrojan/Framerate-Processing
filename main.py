@@ -11,7 +11,7 @@ def clear():
 def get_filecount(path):
     count = 0
     for _path in os.listdir(path):
-        if os.path.isfile(os.path.join(path, _path)):
+        if os.path.isfile(os.path.join(path, _path)) and _path != '.keep':
             count += 1
     return count
 
