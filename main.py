@@ -10,9 +10,7 @@ def main():
     start_time = time.time()
     first_frame_created_time = start_time
 
-    while i < MAX_ITERS:
-        i += 1
-
+    for i in range(MAX_ITERS):
         tmp_count = get_filecount('./tmp_frames')
         out_count = get_filecount('./out_frames')
 
